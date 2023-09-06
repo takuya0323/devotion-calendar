@@ -2,7 +2,7 @@ class Part < ActiveHash::Base
   self.data = [
     { id: 0, name: '---' }, { id: 1, name: '創世記' },{ id: 2, name: '出エジプト記' },{ id: 3, name: 'レビ記' },{ id: 4, name: '民数記' },
     { id: 5, name: '申命記' },{ id: 6, name: 'ヨシュア記' },{ id: 7, name: '士師期' },{ id: 8, name: 'ルツ記' },{ id: 9, name: 'サムエル記第一' },
-    { id: 10, name: 'サムエル記第二' },{ id: 11, name: '列王記第一' },{ id: 12, name: '列王記第二' }, { id: 13, name: '歴代誌第一' },{ id: 14, name: '歴代誌第二' }
+    { id: 10, name: 'サムエル記第二' },{ id: 11, name: '列王記第一' },{ id: 12, name: '列王記第二' }, { id: 13, name: '歴代誌第一' },{ id: 14, name: '歴代誌第二' },
     { id: 15, name: 'エズラ記' },{ id: 16, name: 'ネヘミヤ記' },{ id: 17, name: 'エステル記' },{ id: 18, name: 'ヨブ記' },{ id: 19, name: '詩篇' },{ id: 20, name: '箴言' },
     { id: 21, name: '伝道者の書' },{ id: 22, name: '雅歌' },{ id: 23, name: 'イザヤ書' },{ id: 24, name: 'エレミヤ書' },{ id: 25, name: '哀歌' },
     { id: 26, name: 'エゼキエル書' },{ id: 27, name: 'ダニエル書' },{ id: 28, name: 'ホセア書' },{ id: 29, name: 'ヨエル書' },{ id: 30, name: 'アモス書' },
@@ -15,7 +15,7 @@ class Part < ActiveHash::Base
     { id: 61, name: 'ペテロの手紙第二' },{ id: 62, name: 'ヨハネの手紙第一' },{ id: 63, name: 'ヨハネの手紙第二' },{ id: 64, name: 'ヨハネの手紙第三' },{ id: 65, name: 'ユダの手紙' },
     { id: 66, name: 'ヨハネの黙示録' }
   ]
-  
+
   include ActiveHash::Associations
   has_many :impressions
   end
