@@ -15,4 +15,7 @@ class Part < ActiveHash::Base
     { id: 61, name: 'ペテロの手紙第二' },{ id: 62, name: 'ヨハネの手紙第一' },{ id: 63, name: 'ヨハネの手紙第二' },{ id: 64, name: 'ヨハネの手紙第三' },{ id: 65, name: 'ユダの手紙' },
     { id: 66, name: 'ヨハネの黙示録' }
   ]
+  
+  include ActiveHash::Associations
+  has_many :impressions
   end
