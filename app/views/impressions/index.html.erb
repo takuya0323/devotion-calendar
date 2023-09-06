@@ -1,2 +1,45 @@
-<h1>Impressions#index</h1>
-<p>Find me in app/views/impressions/index.html.erb</p>
+<div class="toppage">
+<h1 class="top">カレンダー</h1>
+<br>
+
+<%= form_with(model: @impression, local: true) do |form| %>
+
+  <div class="time">
+    <div class="form-tag">日付</div>
+      <%= form.datetime_select :start_time %>
+  </div>
+
+  <div class="part">
+    <div class="form-tag">聖書箇所</div>
+        <%= form.collection_select(:part_id, Part.all, :id, :name, {}, {class:"select-box", id:"part"}) %>
+  </div>
+
+
+  <div class="chapter">
+    <div class="form-tag"></div>
+      <%= form.text_field :chapter, placeholder:"例:)1~10" %>章
+  </div>
+
+  <div class="verse">
+    <div class="form-tag"></div>
+      <%= form.text_field :verse, placeholder:"例:)1~10" %>節
+  </div>
+
+  <div class="feedback">
+    <div class="form-tag">感じたこと、思ったこと</div>
+      <%= form.text_area :feedback %>
+  </div>
+
+  <div class="prayer">
+    <div class="form-tag">お祈り</div>
+      <%= form.text_area :prayer %>
+  </div>
+
+ <div class="submit">
+    <%= form.submit "入力"%>
+ </div>
+<% end %>
+</div>
+
+<br>
+
