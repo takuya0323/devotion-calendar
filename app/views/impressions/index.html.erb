@@ -43,3 +43,12 @@
 
 <br>
 
+<%= month_calendar do |date| %>
+  <%= date.day %>
+  
+  <% @impressions.each do |i| %>
+    <div>
+      <%= i.part %>
+    </div>
+  <% end %>
+<% end %>
