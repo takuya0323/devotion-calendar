@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'impressions/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root_to: "impressions#index"
+  resources :impressions, only: [:index,:new]
 end
