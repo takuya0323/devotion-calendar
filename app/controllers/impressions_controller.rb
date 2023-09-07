@@ -7,11 +7,11 @@ class ImpressionsController < ApplicationController
   end
 
   def new
-    @inpression = Impression.new
+    @impression = Impression.new
   end
 
   def create
-    Blog.create(impression_parameter)
+    Impression.create(impression_parameter)
     redirect_to root_path
   end
 
