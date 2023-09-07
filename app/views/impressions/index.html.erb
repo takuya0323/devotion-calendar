@@ -41,12 +41,12 @@
 
 <br>
 
-<%= month_calendar do |date| %>
+<%= month_calendar events:@impressions do |date,impression| %>
   <%= date.day %>
   
-  <% @impressions.each do |i| %>
+  <% impression.each do |i| %>
     <div>
-      <%= i.part %>
+      <%= i.part.name %>:<%= i.verse %>;<%= i.chapter %>
     </div>
   <% end %>
 <% end %>
