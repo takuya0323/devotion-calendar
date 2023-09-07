@@ -1,0 +1,50 @@
+.top-page-header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.title{
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 65vw;
+  white-space: nowrap;
+}
+
+.search-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+.list{
+  display: flex;
+  list-style: none;
+}
+
+.login{
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.user-nickname{  
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.logout{
+  text-decoration: none;
+}
+
+.sign-up{
+  text-decoration: none;
+}
