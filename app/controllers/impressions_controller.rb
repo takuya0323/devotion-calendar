@@ -18,7 +18,7 @@ class ImpressionsController < ApplicationController
   private
 
   def impression_parameter
-    params.require(:impression).permit(:part_id, :chapter, :verse, :feedback, :prayer, :start_time)
+    params.require(:impression).permit(:part_id, :chapter, :feedback, :prayer, :start_time)
   end
 
   def move_to_index

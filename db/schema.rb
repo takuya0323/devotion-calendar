@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 2023_09_07_054952) do
   create_table "impressions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "part_id", null: false
     t.string "chapter", null: false
-    t.string "verse", null: false
     t.text "feedback", null: false
     t.text "prayer"
     t.datetime "start_time"

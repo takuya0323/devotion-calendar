@@ -3,7 +3,6 @@ class CreateImpressions < ActiveRecord::Migration[6.0]
     create_table :impressions do |t|
       t.integer :part_id, null: false
       t.string :chapter, null: false
-      t.string :verse, null: false
       t.text :feedback, null:false
       t.text :prayer
       

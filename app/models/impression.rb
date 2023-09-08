@@ -6,7 +6,6 @@ class Impression < ApplicationRecord
    
   with_options presence: true do
     validates :chapter,format: { with: /\A[\d~〜]+\z/, message: "は半角数字とチルダ（~）のみが許可されています。" }
-    validates :verse,format: { with: /\A[\d~〜]+\z/, message: "は半角数字とチルダ（~）のみが許可されています。" }
     validates :feedback
   end  
 

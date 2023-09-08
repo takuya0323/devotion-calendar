@@ -18,11 +18,6 @@
       <%= form.text_field :chapter, placeholder:"例:)1~10" %>章
   </div>
 
-  <div class="verse">
-    <div class="form-tag"></div>
-      <%= form.text_field :verse, placeholder:"例:)1~10" %>節
-  </div>
-
   <div class="feedback">
     <div class="form-tag">感じたこと、思ったこと</div>
       <%= form.text_area :feedback %>
@@ -46,7 +41,7 @@
   
   <% impression.each do |i| %>
     <div>
-      <%= i.part.name %>:<%= i.verse %>;<%= i.chapter %>
+      <%= i.part.name %>:<%= i.chapter %>章
     </div>
   <% end %>
 <% end %>
